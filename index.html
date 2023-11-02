@@ -21,8 +21,8 @@
 
 <body>
 	<div id="app">
-		<ul>
-			<li v-for="mail in mail"><h3>{{ message }}</h3><p>{{ mail }}</p> </li>
+		<ul v-if="mails.length === 10"> <!-- === 10 o, senza mailCount ma modificare for js -->
+			<li v-for="mail in mails"><h3>{{ message }}</h3><p>{{ mail }}</p> </li>
 		</ul>
 	</div>
 
